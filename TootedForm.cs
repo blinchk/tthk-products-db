@@ -105,10 +105,17 @@ namespace tthk_products_db
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-            titleTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            amountTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            priceTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            try
+            {
+                id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                titleTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                amountTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                priceTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            }
+            catch (FormatException exception)
+            {
+
+            }
         }
     }
 }

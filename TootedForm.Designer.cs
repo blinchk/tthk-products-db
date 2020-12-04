@@ -36,29 +36,30 @@ namespace tthk_products_db
             this.amountTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsDataSet1 = new tthk_products_db.ProductsDataSet();
             this.addButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.productsTableAdapter = new tthk_products_db.ProductsDataSetTableAdapters.productsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(100, 97);
+            this.label1.Location = new System.Drawing.Point(67, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 29);
+            this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nimi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -66,18 +67,20 @@ namespace tthk_products_db
             // titleTextBox
             // 
             this.titleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.titleTextBox.Location = new System.Drawing.Point(169, 94);
+            this.titleTextBox.Location = new System.Drawing.Point(113, 61);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(189, 35);
+            this.titleTextBox.Size = new System.Drawing.Size(127, 26);
             this.titleTextBox.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(84, 138);
+            this.label2.Location = new System.Drawing.Point(56, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 29);
+            this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Kogus";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,29 +88,81 @@ namespace tthk_products_db
             // amountTextBox
             // 
             this.amountTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.amountTextBox.Location = new System.Drawing.Point(169, 135);
+            this.amountTextBox.Location = new System.Drawing.Point(113, 88);
+            this.amountTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.amountTextBox.Name = "amountTextBox";
-            this.amountTextBox.Size = new System.Drawing.Size(189, 35);
+            this.amountTextBox.Size = new System.Drawing.Size(127, 26);
             this.amountTextBox.TabIndex = 1;
             // 
             // priceTextBox
             // 
             this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceTextBox.Location = new System.Drawing.Point(169, 176);
+            this.priceTextBox.Location = new System.Drawing.Point(113, 114);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(189, 35);
+            this.priceTextBox.Size = new System.Drawing.Size(127, 26);
             this.priceTextBox.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(100, 179);
+            this.label3.Location = new System.Drawing.Point(67, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 29);
+            this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Hind";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // productsDataSet1BindingSource
+            // 
+            this.productsDataSet1BindingSource.DataMember = "products";
+            this.productsDataSet1BindingSource.DataSource = this.productsDataSet1;
+            // 
+            // productsDataSet1
+            // 
+            this.productsDataSet1.DataSetName = "ProductsDataSet";
+            this.productsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // addButton
+            // 
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addButton.Location = new System.Drawing.Point(59, 150);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(179, 40);
+            this.addButton.TabIndex = 3;
+            this.addButton.Text = "Lisa";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // updateButton
+            // 
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updateButton.Location = new System.Drawing.Point(59, 194);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(179, 40);
+            this.updateButton.TabIndex = 4;
+            this.updateButton.Text = "Uuenda";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteButton.Location = new System.Drawing.Point(59, 239);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(179, 40);
+            this.deleteButton.TabIndex = 5;
+            this.deleteButton.Text = "Kustuta";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView1
             // 
@@ -119,11 +174,12 @@ namespace tthk_products_db
             this.amountDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productsDataSet1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(456, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(304, 61);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(968, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(645, 218);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
@@ -134,7 +190,7 @@ namespace tthk_products_db
             this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 150;
+            this.idDataGridViewTextBoxColumn.Width = 50;
             // 
             // titleDataGridViewTextBoxColumn
             // 
@@ -150,7 +206,7 @@ namespace tthk_products_db
             this.amountDataGridViewTextBoxColumn.HeaderText = "amount";
             this.amountDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            this.amountDataGridViewTextBoxColumn.Width = 150;
+            this.amountDataGridViewTextBoxColumn.Width = 75;
             // 
             // priceDataGridViewTextBoxColumn
             // 
@@ -158,59 +214,13 @@ namespace tthk_products_db
             this.priceDataGridViewTextBoxColumn.HeaderText = "price";
             this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // productsDataSet1BindingSource
-            // 
-            this.productsDataSet1BindingSource.DataMember = "products";
-            this.productsDataSet1BindingSource.DataSource = this.productsDataSet1;
-            // 
-            // productsDataSet1
-            // 
-            this.productsDataSet1.DataSetName = "ProductsDataSet";
-            this.productsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // addButton
-            // 
-            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(89, 231);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(269, 62);
-            this.addButton.TabIndex = 3;
-            this.addButton.Text = "Lisa";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // updateButton
-            // 
-            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateButton.Location = new System.Drawing.Point(89, 299);
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(269, 62);
-            this.updateButton.TabIndex = 4;
-            this.updateButton.Text = "Uuenda";
-            this.updateButton.UseVisualStyleBackColor = true;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteButton.Location = new System.Drawing.Point(89, 367);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(269, 62);
-            this.deleteButton.TabIndex = 5;
-            this.deleteButton.Text = "Kustuta";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
+            this.priceDataGridViewTextBoxColumn.Width = 75;
             // 
             // TootedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1492, 506);
+            this.ClientSize = new System.Drawing.Size(913, 329);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.addButton);
@@ -221,11 +231,12 @@ namespace tthk_products_db
             this.Controls.Add(this.label2);
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TootedForm";
             this.Text = "Tooted";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,17 +250,17 @@ namespace tthk_products_db
         private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.BindingSource productsDataSet1BindingSource;
+        private ProductsDataSet productsDataSet1;
+        private ProductsDataSetTableAdapters.productsTableAdapter productsTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource productsDataSet1BindingSource;
-        private ProductsDataSet productsDataSet1;
-        private ProductsDataSetTableAdapters.productsTableAdapter productsTableAdapter;
     }
 }
 

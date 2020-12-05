@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Net;
 using System.Windows.Forms;
 
 namespace tthk_products_db
@@ -54,10 +56,11 @@ namespace tthk_products_db
             if (ValidateTextBoxes())
             {
                 connection.Open();
-                command = new SqlCommand("INSERT INTO products(title, amount, price) VALUES (@title, @amount, @price);", connection);
+                command = new SqlCommand("INSERT INTO products(title, amount, price, imageSource) VALUES (@title, @amount, @price, @imageSource);", connection);
                 command.Parameters.AddWithValue("@title", titleTextBox.Text);
                 command.Parameters.AddWithValue("@amount", amountNumeric.Value);
                 command.Parameters.AddWithValue("@price", priceNumeric.Value);
+                command.Parameters.AddWithValue("@imageSource", pictureTextBox.Text);
                 command.ExecuteNonQuery();
                 connection.Close();
                 DisplayData();
@@ -131,20 +134,21 @@ namespace tthk_products_db
                 titleTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
                 amountNumeric.Value = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
                 priceNumeric.Value = Decimal.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
-                productPictureBox.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                pictureTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                var request = WebRequest.Create(dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
 
+                using (var response = request.GetResponse())
+                {
+                    using (var stream = response.GetResponseStream())
+                    {
+                        productPictureBox.Image = Bitmap.FromStream(stream);
+                    }
+                }
             }
             catch (FormatException exception)
             {
                 MessageBox.Show(exception.ToString());
             }
-        }
-
-        private void TootedForm_Load(object sender, EventArgs e)
-        {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "productsDataSet1.products". При необходимости она может быть перемещена или удалена.
-            this.productsTableAdapter.Fill(this.productsDataSet1.products);
-
         }
     }
 }

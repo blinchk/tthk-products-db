@@ -909,8 +909,8 @@ namespace tthk_products_db.ProductsDataSetTableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[products] ([title], [amount], [price], [imageSource]) VALUES (" +
-                "@title, @amount, @price, @imageSource);\r\nSELECT id, title, amount, price, imageS" +
-                "ource FROM products WHERE (id = SCOPE_IDENTITY())";
+                "@title, @amount, @price, @imageSource);\nSELECT id, title, amount, price, imageSo" +
+                "urce FROM products WHERE (id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@amount", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "amount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

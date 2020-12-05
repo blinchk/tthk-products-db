@@ -38,38 +38,37 @@ namespace tthk_products_db
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsDataSet1 = new tthk_products_db.ProductsDataSet();
             this.priceNumeric = new System.Windows.Forms.NumericUpDown();
             this.amountNumeric = new System.Windows.Forms.NumericUpDown();
             this.productPictureBox = new System.Windows.Forms.PictureBox();
             this.pictureLabel = new System.Windows.Forms.Label();
             this.tableLabel = new System.Windows.Forms.Label();
-            this.pictureTextBox = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureTextBoxLabel = new System.Windows.Forms.Label();
+            this.pictureTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.productsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productsDataSet1 = new tthk_products_db.ProductsDataSet();
             this.productsTableAdapter = new tthk_products_db.ProductsDataSetTableAdapters.productsTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(67, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(100, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.Size = new System.Drawing.Size(63, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nimi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -77,20 +76,18 @@ namespace tthk_products_db
             // titleTextBox
             // 
             this.titleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.titleTextBox.Location = new System.Drawing.Point(113, 61);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.titleTextBox.Location = new System.Drawing.Point(170, 94);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(127, 26);
+            this.titleTextBox.Size = new System.Drawing.Size(188, 35);
             this.titleTextBox.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(56, 94);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(84, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.Size = new System.Drawing.Size(82, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Kogus";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -99,10 +96,9 @@ namespace tthk_products_db
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(67, 126);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(100, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.Size = new System.Drawing.Size(63, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "Hind";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -110,10 +106,9 @@ namespace tthk_products_db
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(61, 186);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addButton.Location = new System.Drawing.Point(92, 286);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(179, 40);
+            this.addButton.Size = new System.Drawing.Size(268, 62);
             this.addButton.TabIndex = 3;
             this.addButton.Text = "Lisa";
             this.addButton.UseVisualStyleBackColor = true;
@@ -122,10 +117,9 @@ namespace tthk_products_db
             // updateButton
             // 
             this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateButton.Location = new System.Drawing.Point(61, 230);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(2);
+            this.updateButton.Location = new System.Drawing.Point(92, 354);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(179, 40);
+            this.updateButton.Size = new System.Drawing.Size(268, 62);
             this.updateButton.TabIndex = 4;
             this.updateButton.Text = "Uuenda";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -134,10 +128,9 @@ namespace tthk_products_db
             // deleteButton
             // 
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteButton.Location = new System.Drawing.Point(60, 274);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteButton.Location = new System.Drawing.Point(90, 422);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(179, 40);
+            this.deleteButton.Size = new System.Drawing.Size(268, 62);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "Kustuta";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -153,47 +146,109 @@ namespace tthk_products_db
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.dataGridView1.DataMember = "products";
             this.dataGridView1.DataSource = this.productsDataSet1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(304, 61);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(456, 94);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(415, 298);
+            this.dataGridView1.Size = new System.Drawing.Size(622, 458);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // priceNumeric
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.priceNumeric.DecimalPlaces = 2;
+            this.priceNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceNumeric.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.priceNumeric.Location = new System.Drawing.Point(170, 191);
+            this.priceNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.priceNumeric.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.priceNumeric.Name = "priceNumeric";
+            this.priceNumeric.Size = new System.Drawing.Size(190, 35);
+            this.priceNumeric.TabIndex = 10;
             // 
-            // dataGridViewTextBoxColumn2
+            // amountNumeric
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn2.HeaderText = "title";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.amountNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.amountNumeric.Location = new System.Drawing.Point(170, 142);
+            this.amountNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.amountNumeric.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.amountNumeric.Name = "amountNumeric";
+            this.amountNumeric.Size = new System.Drawing.Size(190, 35);
+            this.amountNumeric.TabIndex = 10;
             // 
-            // dataGridViewTextBoxColumn3
+            // productPictureBox
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "amount";
-            this.dataGridViewTextBoxColumn3.HeaderText = "amount";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.productPictureBox.Location = new System.Drawing.Point(1086, 94);
+            this.productPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productPictureBox.Name = "productPictureBox";
+            this.productPictureBox.Size = new System.Drawing.Size(442, 458);
+            this.productPictureBox.TabIndex = 11;
+            this.productPictureBox.TabStop = false;
             // 
-            // dataGridViewTextBoxColumn4
+            // pictureLabel
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn4.HeaderText = "price";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.pictureLabel.AutoSize = true;
+            this.pictureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pictureLabel.Location = new System.Drawing.Point(1080, 58);
+            this.pictureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pictureLabel.Name = "pictureLabel";
+            this.pictureLabel.Size = new System.Drawing.Size(47, 29);
+            this.pictureLabel.TabIndex = 12;
+            this.pictureLabel.Text = "Pilt";
             // 
-            // dataGridViewTextBoxColumn5
+            // tableLabel
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "imageSource";
-            this.dataGridViewTextBoxColumn5.HeaderText = "imageSource";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.tableLabel.AutoSize = true;
+            this.tableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tableLabel.Location = new System.Drawing.Point(450, 58);
+            this.tableLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tableLabel.Name = "tableLabel";
+            this.tableLabel.Size = new System.Drawing.Size(76, 29);
+            this.tableLabel.TabIndex = 12;
+            this.tableLabel.Text = "Tabel";
+            // 
+            // pictureTextBoxLabel
+            // 
+            this.pictureTextBoxLabel.AutoSize = true;
+            this.pictureTextBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pictureTextBoxLabel.Location = new System.Drawing.Point(39, 243);
+            this.pictureTextBoxLabel.Name = "pictureTextBoxLabel";
+            this.pictureTextBoxLabel.Size = new System.Drawing.Size(47, 29);
+            this.pictureTextBoxLabel.TabIndex = 8;
+            this.pictureTextBoxLabel.Text = "Pilt";
+            this.pictureTextBoxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureTextBox
+            // 
+            this.pictureTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pictureTextBox.Location = new System.Drawing.Point(90, 238);
+            this.pictureTextBox.Name = "pictureTextBox";
+            this.pictureTextBox.Size = new System.Drawing.Size(268, 35);
+            this.pictureTextBox.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(92, 491);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(268, 62);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Kustuta kõik";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.deleteAllButton_Click);
             // 
             // productsDataSet1BindingSource
             // 
@@ -205,108 +260,56 @@ namespace tthk_products_db
             this.productsDataSet1.DataSetName = "ProductsDataSet";
             this.productsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // priceNumeric
-            // 
-            this.priceNumeric.DecimalPlaces = 2;
-            this.priceNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceNumeric.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.priceNumeric.Location = new System.Drawing.Point(113, 124);
-            this.priceNumeric.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.priceNumeric.Name = "priceNumeric";
-            this.priceNumeric.Size = new System.Drawing.Size(127, 26);
-            this.priceNumeric.TabIndex = 10;
-            // 
-            // amountNumeric
-            // 
-            this.amountNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.amountNumeric.Location = new System.Drawing.Point(113, 92);
-            this.amountNumeric.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.amountNumeric.Name = "amountNumeric";
-            this.amountNumeric.Size = new System.Drawing.Size(127, 26);
-            this.amountNumeric.TabIndex = 10;
-            // 
-            // productPictureBox
-            // 
-            this.productPictureBox.Location = new System.Drawing.Point(724, 61);
-            this.productPictureBox.Name = "productPictureBox";
-            this.productPictureBox.Size = new System.Drawing.Size(295, 298);
-            this.productPictureBox.TabIndex = 11;
-            this.productPictureBox.TabStop = false;
-            // 
-            // pictureLabel
-            // 
-            this.pictureLabel.AutoSize = true;
-            this.pictureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pictureLabel.Location = new System.Drawing.Point(720, 38);
-            this.pictureLabel.Name = "pictureLabel";
-            this.pictureLabel.Size = new System.Drawing.Size(30, 20);
-            this.pictureLabel.TabIndex = 12;
-            this.pictureLabel.Text = "Pilt";
-            // 
-            // tableLabel
-            // 
-            this.tableLabel.AutoSize = true;
-            this.tableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tableLabel.Location = new System.Drawing.Point(300, 38);
-            this.tableLabel.Name = "tableLabel";
-            this.tableLabel.Size = new System.Drawing.Size(48, 20);
-            this.tableLabel.TabIndex = 12;
-            this.tableLabel.Text = "Tabel";
-            // 
-            // pictureTextBox
-            // 
-            this.pictureTextBox.AutoSize = true;
-            this.pictureTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pictureTextBox.Location = new System.Drawing.Point(26, 158);
-            this.pictureTextBox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.pictureTextBox.Name = "pictureTextBox";
-            this.pictureTextBox.Size = new System.Drawing.Size(30, 20);
-            this.pictureTextBox.TabIndex = 8;
-            this.pictureTextBox.Text = "Pilt";
-            this.pictureTextBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(60, 155);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 26);
-            this.textBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(61, 319);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Kustuta kõik";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.deleteButton_Click);
-            // 
             // productsTableAdapter
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn2.HeaderText = "title";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "amount";
+            this.dataGridViewTextBoxColumn3.HeaderText = "amount";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn4.HeaderText = "price";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "imageSource";
+            this.dataGridViewTextBoxColumn5.HeaderText = "imageSource";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
             // TootedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 364);
+            this.ClientSize = new System.Drawing.Size(1574, 560);
             this.Controls.Add(this.tableLabel);
             this.Controls.Add(this.pictureLabel);
             this.Controls.Add(this.productPictureBox);
@@ -319,20 +322,18 @@ namespace tthk_products_db
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureTextBox);
+            this.Controls.Add(this.pictureTextBoxLabel);
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TootedForm";
             this.Text = "Tooted";
-            this.Load += new System.EventHandler(this.TootedForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,22 +354,22 @@ namespace tthk_products_db
         private System.Windows.Forms.PictureBox productPictureBox;
         private System.Windows.Forms.Label pictureLabel;
         private System.Windows.Forms.Label tableLabel;
-        private System.Windows.Forms.Label pictureTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label pictureTextBoxLabel;
+        private System.Windows.Forms.TextBox pictureTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imageSourceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource productsDataSet1BindingSource;
+        private ProductsDataSet productsDataSet1;
+        private ProductsDataSetTableAdapters.productsTableAdapter productsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.BindingSource productsDataSet1BindingSource;
-        private ProductsDataSet productsDataSet1;
-        private ProductsDataSetTableAdapters.productsTableAdapter productsTableAdapter;
     }
 }
 

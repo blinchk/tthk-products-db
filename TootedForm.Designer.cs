@@ -38,6 +38,13 @@ namespace tthk_products_db
             this.updateButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productsDataSet1 = new tthk_products_db.ProductsDataSet();
             this.priceNumeric = new System.Windows.Forms.NumericUpDown();
             this.amountNumeric = new System.Windows.Forms.NumericUpDown();
             this.productPictureBox = new System.Windows.Forms.PictureBox();
@@ -46,27 +53,22 @@ namespace tthk_products_db
             this.pictureTextBoxLabel = new System.Windows.Forms.Label();
             this.pictureTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.productsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsDataSet1 = new tthk_products_db.ProductsDataSet();
             this.productsTableAdapter = new tthk_products_db.ProductsDataSetTableAdapters.productsTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryCheckbox = new System.Windows.Forms.ComboBox();
+            this.categoryLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(100, 97);
+            this.label1.Location = new System.Drawing.Point(100, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 29);
             this.label1.TabIndex = 8;
@@ -76,7 +78,7 @@ namespace tthk_products_db
             // titleTextBox
             // 
             this.titleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.titleTextBox.Location = new System.Drawing.Point(170, 94);
+            this.titleTextBox.Location = new System.Drawing.Point(170, 27);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(188, 35);
             this.titleTextBox.TabIndex = 0;
@@ -85,7 +87,7 @@ namespace tthk_products_db
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(84, 145);
+            this.label2.Location = new System.Drawing.Point(84, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 29);
             this.label2.TabIndex = 7;
@@ -96,7 +98,7 @@ namespace tthk_products_db
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(100, 194);
+            this.label3.Location = new System.Drawing.Point(100, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 29);
             this.label3.TabIndex = 6;
@@ -155,6 +157,57 @@ namespace tthk_products_db
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn2.HeaderText = "title";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "amount";
+            this.dataGridViewTextBoxColumn3.HeaderText = "amount";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "price";
+            this.dataGridViewTextBoxColumn4.HeaderText = "price";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "imageSource";
+            this.dataGridViewTextBoxColumn5.HeaderText = "imageSource";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
+            // productsDataSet1BindingSource
+            // 
+            this.productsDataSet1BindingSource.DataMember = "products";
+            this.productsDataSet1BindingSource.DataSource = this.productsDataSet1;
+            // 
+            // productsDataSet1
+            // 
+            this.productsDataSet1.DataSetName = "ProductsDataSet";
+            this.productsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // priceNumeric
             // 
             this.priceNumeric.DecimalPlaces = 2;
@@ -164,7 +217,7 @@ namespace tthk_products_db
             0,
             0,
             65536});
-            this.priceNumeric.Location = new System.Drawing.Point(170, 191);
+            this.priceNumeric.Location = new System.Drawing.Point(170, 124);
             this.priceNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.priceNumeric.Maximum = new decimal(new int[] {
             999999,
@@ -178,7 +231,7 @@ namespace tthk_products_db
             // amountNumeric
             // 
             this.amountNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.amountNumeric.Location = new System.Drawing.Point(170, 142);
+            this.amountNumeric.Location = new System.Drawing.Point(170, 75);
             this.amountNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.amountNumeric.Maximum = new decimal(new int[] {
             999999,
@@ -224,7 +277,7 @@ namespace tthk_products_db
             // 
             this.pictureTextBoxLabel.AutoSize = true;
             this.pictureTextBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pictureTextBoxLabel.Location = new System.Drawing.Point(39, 243);
+            this.pictureTextBoxLabel.Location = new System.Drawing.Point(39, 176);
             this.pictureTextBoxLabel.Name = "pictureTextBoxLabel";
             this.pictureTextBoxLabel.Size = new System.Drawing.Size(47, 29);
             this.pictureTextBoxLabel.TabIndex = 8;
@@ -234,7 +287,7 @@ namespace tthk_products_db
             // pictureTextBox
             // 
             this.pictureTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pictureTextBox.Location = new System.Drawing.Point(90, 238);
+            this.pictureTextBox.Location = new System.Drawing.Point(90, 171);
             this.pictureTextBox.Name = "pictureTextBox";
             this.pictureTextBox.Size = new System.Drawing.Size(268, 35);
             this.pictureTextBox.TabIndex = 0;
@@ -250,66 +303,36 @@ namespace tthk_products_db
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.deleteAllButton_Click);
             // 
-            // productsDataSet1BindingSource
-            // 
-            this.productsDataSet1BindingSource.DataMember = "products";
-            this.productsDataSet1BindingSource.DataSource = this.productsDataSet1;
-            // 
-            // productsDataSet1
-            // 
-            this.productsDataSet1.DataSetName = "ProductsDataSet";
-            this.productsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // productsTableAdapter
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // categoryCheckbox
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
+            this.categoryCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.categoryCheckbox.FormattingEnabled = true;
+            this.categoryCheckbox.Location = new System.Drawing.Point(89, 212);
+            this.categoryCheckbox.Name = "categoryCheckbox";
+            this.categoryCheckbox.Size = new System.Drawing.Size(271, 37);
+            this.categoryCheckbox.TabIndex = 13;
             // 
-            // dataGridViewTextBoxColumn2
+            // categoryLabel
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn2.HeaderText = "title";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "amount";
-            this.dataGridViewTextBoxColumn3.HeaderText = "amount";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "price";
-            this.dataGridViewTextBoxColumn4.HeaderText = "price";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "imageSource";
-            this.dataGridViewTextBoxColumn5.HeaderText = "imageSource";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 150;
+            this.categoryLabel.AutoSize = true;
+            this.categoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.categoryLabel.Location = new System.Drawing.Point(17, 215);
+            this.categoryLabel.Name = "categoryLabel";
+            this.categoryLabel.Size = new System.Drawing.Size(69, 29);
+            this.categoryLabel.TabIndex = 8;
+            this.categoryLabel.Text = "Tüüp";
+            this.categoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TootedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1574, 560);
+            this.Controls.Add(this.categoryCheckbox);
             this.Controls.Add(this.tableLabel);
             this.Controls.Add(this.pictureLabel);
             this.Controls.Add(this.productPictureBox);
@@ -323,17 +346,18 @@ namespace tthk_products_db
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureTextBox);
+            this.Controls.Add(this.categoryLabel);
             this.Controls.Add(this.pictureTextBoxLabel);
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label1);
             this.Name = "TootedForm";
             this.Text = "Tooted";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,6 +394,8 @@ namespace tthk_products_db
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.ComboBox categoryCheckbox;
+        private System.Windows.Forms.Label categoryLabel;
     }
 }
 

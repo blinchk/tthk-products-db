@@ -19,6 +19,7 @@ namespace tthk_products_db
             InitializeComponent();
             numericBoxes = new NumericUpDown[] { amountNumeric, priceNumeric };
             // We use different types of input boxes
+            RequestCategories();
             DisplayData();
             ClearData();
         }
@@ -31,6 +32,26 @@ namespace tthk_products_db
             adapter.Fill(table);
             dataGridView1.DataSource = table;
             connection.Close();
+        }
+
+        private void RequestCategories()
+        {
+            connection.Open();
+            command = new SqlCommand("SELECT title FROM categories;", connection);
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    AddCategoryToCheckbox(reader, "title");
+                }
+
+                connection.Close();
+            }
+        }
+
+        private void AddCategoryToCheckbox(SqlDataReader source, string name)
+        {
+            categoryCheckbox.Items.Add(source[name].ToString());
         }
 
         private bool ValidateTextBoxes()
